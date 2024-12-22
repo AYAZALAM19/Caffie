@@ -6,23 +6,22 @@ import Layout from "../layouts/Layout.astro"
 <Layout>
 	<h1>Welcome to Astro</h1>
 	<p>Build faster websites with less client-side JavaScript</p>
-
-
 	<div id="default-carousel" class="relative">
 		<!-- Carousel container -->
 		<div class="relative overflow-hidden">
-		  <div class="carousel-slide flex transition-transform duration-500">
+		  <!-- Container for all slides (with transition applied) -->
+		  <div class="carousel-slide flex transition-transform duration-1000 ease-in-out">
 			<!-- Slide 1 -->
 			<div class="flex-shrink-0 w-full">
-			  <img class="w-96 h-96 object-cover" src="https://picsum.photos/200/300" alt="Slide 1">
+			  <img class="w-full h-96 object-cover" src="https://picsum.photos/200/300" alt="Slide 1">
 			</div>
 			<!-- Slide 2 -->
 			<div class="flex-shrink-0 w-full">
-			  <img class="w-96 h-96 object-cover" src="/assets/images/kkr.jpg" alt="Slide 2">
+			  <img class="w-full h-96 object-cover" src="/assets/images/kkr.jpg" alt="Slide 2">
 			</div>
 			<!-- Slide 3 -->
 			<div class="flex-shrink-0 w-full">
-			  <img class="w-96 h-96 object-cover" src="https://picsum.photos/200/300?random=2" alt="Slide 3">
+			  <img class="w-full h-96 object-cover" src="https://picsum.photos/200/300?random=2" alt="Slide 3">
 			</div>
 		  </div>
 		</div>
@@ -37,32 +36,31 @@ import Layout from "../layouts/Layout.astro"
 	  </div>
 	  
 	  
-	  <script is:inline>
+	  
+	  
+	<script is:inline>
 		let slidesContainer = document.querySelector('.carousel-slide'); // The container for all the slides
 		let slides = document.querySelectorAll('.carousel-slide .flex-shrink-0'); // Select the individual slides
 		let prev = document.getElementById('prev');
 		let next = document.getElementById('next');
 		let currentSlide = 0;
-		
+	
 		// Function to update the visibility of slides and apply translation
 		const updateSlide = () => {
-		  const offset = -currentSlide * 100; // 100% per slide width
-		  slidesContainer.style.transform = `translateX(${offset}%)`; // Apply the translation
+			const offset = -currentSlide * 100; // 100% per slide width
+			slidesContainer.style.transform = `translateX(${offset}%)`; // Apply the translation
 		};
-	  
+	
 		// Event listener for next button
 		next.addEventListener('click', () => {
-		  currentSlide = (currentSlide + 1) % slides.length; // Loop back to the first slide
-		  updateSlide();
+			currentSlide = (currentSlide + 1) % slides.length; // Loop back to the first slide
+			updateSlide();
 		});
-	  
+	
 		// Event listener for prev button
 		prev.addEventListener('click', () => {
-		  currentSlide = (currentSlide - 1 + slides.length) % slides.length; // Loop back to the last slide
-		  updateSlide();
+			currentSlide = (currentSlide - 1 + slides.length) % slides.length; // Loop back to the last slide
+			updateSlide();
 		});
-	  
-		// Initialize the carousel
-		updateSlide(); // Show the first slide initially
-	  </script>
+	</script>
 	  
