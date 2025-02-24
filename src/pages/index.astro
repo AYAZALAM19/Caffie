@@ -184,7 +184,297 @@ import Layout from "../layouts/Layout.astro"
 	</div>
   </div>
   
-  
+  <div class="bg-blue-300 w-screen">
+	<div class="md:px-20 px-2 md:my-20 mx-auto">
+		<h2 class="text-center md:text-5xl font-semibold text-blue-600">Bestsellers</h2>
+
+		<!-- Tab buttons -->
+		<div class="flex md:px-24 justify-between py-5 border-b-4 border-blue-600">
+			<button class="tablinks text-lg font-semibold md:text-xl rounded-md px-4 py-2" onclick="openCoffee('instantCoffee', this)" id="defaultOpen">Instant Coffee</button>
+			<button class="tablinks text-lg font-semibold md:text-xl rounded-md px-4 py-2" onclick="openCoffee('coldBrew', this)">Cold Brew</button>
+			<button class="tablinks text-lg font-semibold md:text-xl rounded-md px-4 py-2" onclick="openCoffee('hotBrew', this)">Hot Brew</button>
+			<button class="tablinks text-lg font-semibold md:text-xl rounded-md px-4 py-2" onclick="openCoffee('merchandise', this)">Merchandise</button>
+		</div>
+
+		<!-- Tab Content -->
+		<div class="flex justify-between my-12 ">
+			<div id="instantCoffee" class="tabcontent block ">
+				<div class="grid w-full grid-cols-1 md:grid-cols-3 gap-4">
+					<!-- Product Card 1 -->
+					<div class=" relative rounded-lg shadow-lg flex flex-col">
+						<div class="relative">
+							<img src="https://sleepyowl.co/cdn/shop/files/Filterkaapi100gjar_1080x.jpg?v=1710227543"
+								class="w-full rounded" alt="Filter Instant Coffee">
+							<a href="#" class="absolute top-2 right-2 text-lg font-semibold bg-slate-300 text-blue-600 px-3 py-1 rounded-lg shadow">+ ADD</a>
+						</div>
+						<div class="flex flex-col gap-2 mt-4 pb-4">
+							<a href="#" class="text-lg font-semibold">Coffee Frother <span class="bg-yellow-400 px-1 rounded">Free Coffee</span></a>
+							<div class="flex justify-between text-lg font-medium">
+								<span>₹375</span>
+								<a href="#">
+									<svg width="15" height="15" class="mt-1" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.1156 8.07707V12.1155C12.1156 12.4216 11.994 12.715 11.7776 12.9314C11.5612 13.1478 11.2677 13.2694 10.9617 13.2694H2.8848C2.57878 13.2694 2.2853 13.1478 2.06891 12.9314C1.85252 12.715 1.73096 12.4216 1.73096 12.1155V4.03861C1.73096 3.73259 1.85252 3.43911 2.06891 3.22272C2.2853 3.00633 2.57878 2.88477 2.8848 2.88477H7.50019" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M13.2817 4.89536V1.63179H10.0181" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M13.2817 1.63184L6.35866 8.55491" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+			
+					<!-- Product Card 2 -->
+					<div class="border relative bg-white p-4 rounded-lg shadow-lg flex flex-col">
+						<div class="relative">
+							<img src="https://sleepyowl.co/cdn/shop/files/Filterkaapi100gjar_1080x.jpg?v=1710227543"
+								class="w-full rounded" alt="Filter Instant Coffee">
+							<a href="#" class="absolute top-2 right-2 text-lg font-semibold bg-slate-300 text-blue-600 px-3 py-1 rounded-lg shadow">+ ADD</a>
+						</div>
+						<div class="flex flex-col gap-2 mt-4 pb-4">
+							<a href="#" class="text-lg font-semibold">Filter Instant Coffee</a>
+							<div class="flex justify-between text-lg font-medium">
+								<span>₹375</span>
+								<a href="#">
+									<svg width="15" height="15" class="mt-1" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.1156 8.07707V12.1155C12.1156 12.4216 11.994 12.715 11.7776 12.9314C11.5612 13.1478 11.2677 13.2694 10.9617 13.2694H2.8848C2.57878 13.2694 2.2853 13.1478 2.06891 12.9314C1.85252 12.715 1.73096 12.4216 1.73096 12.1155V4.03861C1.73096 3.73259 1.85252 3.43911 2.06891 3.22272C2.2853 3.00633 2.57878 2.88477 2.8848 2.88477H7.50019" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M13.2817 4.89536V1.63179H10.0181" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M13.2817 1.63184L6.35866 8.55491" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+			
+					<!-- Product Card 3 -->
+					<div class="border relative bg-white p-4 rounded-lg shadow-lg flex flex-col">
+						<div class="relative">
+							<img src="https://sleepyowl.co/cdn/shop/files/Filterkaapi100gjar_1080x.jpg?v=1710227543"
+								class="w-full rounded" alt="Filter Instant Coffee">
+							<a href="#" class="absolute top-2 right-2 text-lg font-semibold bg-slate-300 text-blue-600 px-3 py-1 rounded-lg shadow">+ ADD</a>
+						</div>
+						<div class="flex flex-col gap-2 mt-4 pb-4">
+							<a href="#" class="text-lg font-semibold">Filter Instant Coffee</a>
+							<div class="flex justify-between text-lg font-medium">
+								<span>₹375</span>
+								<a href="#">
+									<svg width="15" height="15" class="mt-1" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.1156 8.07707V12.1155C12.1156 12.4216 11.994 12.715 11.7776 12.9314C11.5612 13.1478 11.2677 13.2694 10.9617 13.2694H2.8848C2.57878 13.2694 2.2853 13.1478 2.06891 12.9314C1.85252 12.715 1.73096 12.4216 1.73096 12.1155V4.03861C1.73096 3.73259 1.85252 3.43911 2.06891 3.22272C2.2853 3.00633 2.57878 2.88477 2.8848 2.88477H7.50019" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M13.2817 4.89536V1.63179H10.0181" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M13.2817 1.63184L6.35866 8.55491" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+
+			<div id="coldBrew" class="tabcontent hidden">
+				<div class="grid w-full grid-cols-1 md:grid-cols-3 gap-4">
+					<!-- card 1 -->
+					<div class=" relative rounded-lg shadow-lg flex flex-col">
+						<div class="relative">
+							<img src="https://sleepyowl.co/cdn/shop/files/Filterkaapi100gjar_1080x.jpg?v=1710227543"
+								class="w-full rounded" alt="Filter Instant Coffee">
+							<a href="#" class="absolute top-2 right-2 text-lg font-semibold bg-slate-300 text-blue-600 px-3 py-1 rounded-lg shadow">+ ADD</a>
+						</div>
+						<div class="flex flex-col gap-2 mt-4 pb-4">
+							<a href="#" class="text-lg font-semibold">Coffee Frother <span class="bg-yellow-400 px-1 rounded">Free Coffee</span></a>
+							<div class="flex justify-between text-lg font-medium">
+								<span>₹375</span>
+								<a href="#">
+									<svg width="15" height="15" class="mt-1" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.1156 8.07707V12.1155C12.1156 12.4216 11.994 12.715 11.7776 12.9314C11.5612 13.1478 11.2677 13.2694 10.9617 13.2694H2.8848C2.57878 13.2694 2.2853 13.1478 2.06891 12.9314C1.85252 12.715 1.73096 12.4216 1.73096 12.1155V4.03861C1.73096 3.73259 1.85252 3.43911 2.06891 3.22272C2.2853 3.00633 2.57878 2.88477 2.8848 2.88477H7.50019" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M13.2817 4.89536V1.63179H10.0181" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M13.2817 1.63184L6.35866 8.55491" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- card 2 -->
+					<div class=" relative rounded-lg shadow-lg flex flex-col">
+						<div class="relative">
+							<img src="https://sleepyowl.co/cdn/shop/files/Filterkaapi100gjar_1080x.jpg?v=1710227543"
+								class="w-full rounded" alt="Filter Instant Coffee">
+							<a href="#" class="absolute top-2 right-2 text-lg font-semibold bg-slate-300 text-blue-600 px-3 py-1 rounded-lg shadow">+ ADD</a>
+						</div>
+						<div class="flex flex-col gap-2 mt-4 pb-4">
+							<a href="#" class="text-lg font-semibold">Coffee Frother <span class="bg-yellow-400 px-1 rounded">Free Coffee</span></a>
+							<div class="flex justify-between text-lg font-medium">
+								<span>₹375</span>
+								<a href="#">
+									<svg width="15" height="15" class="mt-1" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.1156 8.07707V12.1155C12.1156 12.4216 11.994 12.715 11.7776 12.9314C11.5612 13.1478 11.2677 13.2694 10.9617 13.2694H2.8848C2.57878 13.2694 2.2853 13.1478 2.06891 12.9314C1.85252 12.715 1.73096 12.4216 1.73096 12.1155V4.03861C1.73096 3.73259 1.85252 3.43911 2.06891 3.22272C2.2853 3.00633 2.57878 2.88477 2.8848 2.88477H7.50019" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M13.2817 4.89536V1.63179H10.0181" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M13.2817 1.63184L6.35866 8.55491" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- Card 3 -->
+					<div class=" relative rounded-lg shadow-lg flex flex-col">
+						<div class="relative">
+							<img src="https://sleepyowl.co/cdn/shop/files/Filterkaapi100gjar_1080x.jpg?v=1710227543"
+								class="w-full rounded" alt="Filter Instant Coffee">
+							<a href="#" class="absolute top-2 right-2 text-lg font-semibold bg-slate-300 text-blue-600 px-3 py-1 rounded-lg shadow">+ ADD</a>
+						</div>
+						<div class="flex flex-col gap-2 mt-4 pb-4">
+							<a href="#" class="text-lg font-semibold">Coffee Frother <span class="bg-yellow-400 px-1 rounded">Free Coffee</span></a>
+							<div class="flex justify-between text-lg font-medium">
+								<span>₹375</span>
+								<a href="#">
+									<svg width="15" height="15" class="mt-1" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.1156 8.07707V12.1155C12.1156 12.4216 11.994 12.715 11.7776 12.9314C11.5612 13.1478 11.2677 13.2694 10.9617 13.2694H2.8848C2.57878 13.2694 2.2853 13.1478 2.06891 12.9314C1.85252 12.715 1.73096 12.4216 1.73096 12.1155V4.03861C1.73096 3.73259 1.85252 3.43911 2.06891 3.22272C2.2853 3.00633 2.57878 2.88477 2.8848 2.88477H7.50019" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M13.2817 4.89536V1.63179H10.0181" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M13.2817 1.63184L6.35866 8.55491" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="hotBrew" class="tabcontent hidden">
+				<div class="grid w-full grid-cols-1 md:grid-cols-3 gap-4">
+					<!-- Card 1 -->
+					<div class=" relative rounded-lg shadow-lg flex flex-col">
+						<div class="relative">
+							<img src="https://sleepyowl.co/cdn/shop/files/Filterkaapi100gjar_1080x.jpg?v=1710227543"
+								class="w-full rounded" alt="Filter Instant Coffee">
+							<a href="#" class="absolute top-2 right-2 text-lg font-semibold bg-slate-300 text-blue-600 px-3 py-1 rounded-lg shadow">+ ADD</a>
+						</div>
+						<div class="flex flex-col gap-2 mt-4 pb-4">
+							<a href="#" class="text-lg font-semibold">Coffee Frother <span class="bg-yellow-400 px-1 rounded">Free Coffee</span></a>
+							<div class="flex justify-between text-lg font-medium">
+								<span>₹375</span>
+								<a href="#">
+									<svg width="15" height="15" class="mt-1" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.1156 8.07707V12.1155C12.1156 12.4216 11.994 12.715 11.7776 12.9314C11.5612 13.1478 11.2677 13.2694 10.9617 13.2694H2.8848C2.57878 13.2694 2.2853 13.1478 2.06891 12.9314C1.85252 12.715 1.73096 12.4216 1.73096 12.1155V4.03861C1.73096 3.73259 1.85252 3.43911 2.06891 3.22272C2.2853 3.00633 2.57878 2.88477 2.8848 2.88477H7.50019" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M13.2817 4.89536V1.63179H10.0181" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M13.2817 1.63184L6.35866 8.55491" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- card 2 -->
+					<div class=" relative rounded-lg shadow-lg flex flex-col">
+						<div class="relative">
+							<img src="https://sleepyowl.co/cdn/shop/files/Filterkaapi100gjar_1080x.jpg?v=1710227543"
+								class="w-full rounded" alt="Filter Instant Coffee">
+							<a href="#" class="absolute top-2 right-2 text-lg font-semibold bg-slate-300 text-blue-600 px-3 py-1 rounded-lg shadow">+ ADD</a>
+						</div>
+						<div class="flex flex-col gap-2 mt-4 pb-4">
+							<a href="#" class="text-lg font-semibold">Coffee Frother <span class="bg-yellow-400 px-1 rounded">Free Coffee</span></a>
+							<div class="flex justify-between text-lg font-medium">
+								<span>₹375</span>
+								<a href="#">
+									<svg width="15" height="15" class="mt-1" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.1156 8.07707V12.1155C12.1156 12.4216 11.994 12.715 11.7776 12.9314C11.5612 13.1478 11.2677 13.2694 10.9617 13.2694H2.8848C2.57878 13.2694 2.2853 13.1478 2.06891 12.9314C1.85252 12.715 1.73096 12.4216 1.73096 12.1155V4.03861C1.73096 3.73259 1.85252 3.43911 2.06891 3.22272C2.2853 3.00633 2.57878 2.88477 2.8848 2.88477H7.50019" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M13.2817 4.89536V1.63179H10.0181" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M13.2817 1.63184L6.35866 8.55491" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- card 3 -->
+					 <div class=" relative rounded-lg shadow-lg flex flex-col">
+						<div class="relative">
+							<img src="https://sleepyowl.co/cdn/shop/files/Filterkaapi100gjar_1080x.jpg?v=1710227543"
+								class="w-full rounded" alt="Filter Instant Coffee">
+							<a href="#" class="absolute top-2 right-2 text-lg font-semibold bg-slate-300 text-blue-600 px-3 py-1 rounded-lg shadow">+ ADD</a>
+						</div>
+						<div class="flex flex-col gap-2 mt-4 pb-4">
+							<a href="#" class="text-lg font-semibold">Coffee Frother <span class="bg-yellow-400 px-1 rounded">Free Coffee</span></a>
+							<div class="flex justify-between text-lg font-medium">
+								<span>₹375</span>
+								<a href="#">
+									<svg width="15" height="15" class="mt-1" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.1156 8.07707V12.1155C12.1156 12.4216 11.994 12.715 11.7776 12.9314C11.5612 13.1478 11.2677 13.2694 10.9617 13.2694H2.8848C2.57878 13.2694 2.2853 13.1478 2.06891 12.9314C1.85252 12.715 1.73096 12.4216 1.73096 12.1155V4.03861C1.73096 3.73259 1.85252 3.43911 2.06891 3.22272C2.2853 3.00633 2.57878 2.88477 2.8848 2.88477H7.50019" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M13.2817 4.89536V1.63179H10.0181" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M13.2817 1.63184L6.35866 8.55491" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="merchandise" class="tabcontent hidden">
+				<div class="grid w-full grid-cols-1 md:grid-cols-3 gap-4">
+					<!-- Card 1 -->
+					<div class=" relative rounded-lg shadow-lg flex flex-col">
+						<div class="relative">
+							<img src="https://sleepyowl.co/cdn/shop/files/Filterkaapi100gjar_1080x.jpg?v=1710227543"
+								class="w-full rounded" alt="Filter Instant Coffee">
+							<a href="#" class="absolute top-2 right-2 text-lg font-semibold bg-slate-300 text-blue-600 px-3 py-1 rounded-lg shadow">+ ADD</a>
+						</div>
+						<div class="flex flex-col gap-2 mt-4 pb-4">
+							<a href="#" class="text-lg font-semibold">Coffee Frother <span class="bg-yellow-400 px-1 rounded">Free Coffee</span></a>
+							<div class="flex justify-between text-lg font-medium">
+								<span>₹375</span>
+								<a href="#">
+									<svg width="15" height="15" class="mt-1" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.1156 8.07707V12.1155C12.1156 12.4216 11.994 12.715 11.7776 12.9314C11.5612 13.1478 11.2677 13.2694 10.9617 13.2694H2.8848C2.57878 13.2694 2.2853 13.1478 2.06891 12.9314C1.85252 12.715 1.73096 12.4216 1.73096 12.1155V4.03861C1.73096 3.73259 1.85252 3.43911 2.06891 3.22272C2.2853 3.00633 2.57878 2.88477 2.8848 2.88477H7.50019" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M13.2817 4.89536V1.63179H10.0181" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M13.2817 1.63184L6.35866 8.55491" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- card 2 -->
+					<div class=" relative rounded-lg shadow-lg flex flex-col">
+						<div class="relative">
+							<img src="https://sleepyowl.co/cdn/shop/files/Filterkaapi100gjar_1080x.jpg?v=1710227543"
+								class="w-full rounded" alt="Filter Instant Coffee">
+							<a href="#" class="absolute top-2 right-2 text-lg font-semibold bg-slate-300 text-blue-600 px-3 py-1 rounded-lg shadow">+ ADD</a>
+						</div>
+						<div class="flex flex-col gap-2 mt-4 pb-4">
+							<a href="#" class="text-lg font-semibold">Coffee Frother <span class="bg-yellow-400 px-1 rounded">Free Coffee</span></a>
+							<div class="flex justify-between text-lg font-medium">
+								<span>₹375</span>
+								<a href="#">
+									<svg width="15" height="15" class="mt-1" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.1156 8.07707V12.1155C12.1156 12.4216 11.994 12.715 11.7776 12.9314C11.5612 13.1478 11.2677 13.2694 10.9617 13.2694H2.8848C2.57878 13.2694 2.2853 13.1478 2.06891 12.9314C1.85252 12.715 1.73096 12.4216 1.73096 12.1155V4.03861C1.73096 3.73259 1.85252 3.43911 2.06891 3.22272C2.2853 3.00633 2.57878 2.88477 2.8848 2.88477H7.50019" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M13.2817 4.89536V1.63179H10.0181" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M13.2817 1.63184L6.35866 8.55491" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- card 3 -->
+					 <div class=" relative rounded-lg shadow-lg flex flex-col">
+						<div class="relative">
+							<img src="https://sleepyowl.co/cdn/shop/files/Filterkaapi100gjar_1080x.jpg?v=1710227543"
+								class="w-full rounded" alt="Filter Instant Coffee">
+							<a href="#" class="absolute top-2 right-2 text-lg font-semibold bg-slate-300 text-blue-600 px-3 py-1 rounded-lg shadow">+ ADD</a>
+						</div>
+						<div class="flex flex-col gap-2 mt-4 pb-4">
+							<a href="#" class="text-lg font-semibold">Coffee Frother <span class="bg-yellow-400 px-1 rounded">Free Coffee</span></a>
+							<div class="flex justify-between text-lg font-medium">
+								<span>₹375</span>
+								<a href="#">
+									<svg width="15" height="15" class="mt-1" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.1156 8.07707V12.1155C12.1156 12.4216 11.994 12.715 11.7776 12.9314C11.5612 13.1478 11.2677 13.2694 10.9617 13.2694H2.8848C2.57878 13.2694 2.2853 13.1478 2.06891 12.9314C1.85252 12.715 1.73096 12.4216 1.73096 12.1155V4.03861C1.73096 3.73259 1.85252 3.43911 2.06891 3.22272C2.2853 3.00633 2.57878 2.88477 2.8848 2.88477H7.50019" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M13.2817 4.89536V1.63179H10.0181" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M13.2817 1.63184L6.35866 8.55491" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
   
 
   
@@ -212,5 +502,30 @@ import Layout from "../layouts/Layout.astro"
 			currentSlide = (currentSlide - 1 + slides.length) % slides.length; // Loop back to the last slide
 			updateSlide();
 		});
+
+		function openCoffee(coffeeName, elmnt) {
+    // Hide all tab contents
+    var tabcontent = document.getElementsByClassName("tabcontent");
+    for (var i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Remove active class from all buttons
+    var tablinks = document.getElementsByClassName("tablinks");
+    for (var i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("bg-blue-600", "text-white");
+    }
+
+    // Show the clicked tab content
+    document.getElementById(coffeeName).style.display = "block";
+
+    // Highlight active tab
+    elmnt.classList.add("bg-blue-600", "text-white");
+}
+
+// Open default tab on page load
+document.getElementById("defaultOpen").click();
+
+
 	</script>
 	  
