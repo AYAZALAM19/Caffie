@@ -1,7 +1,7 @@
 ---
 
 ---
-<nav class="bg-slate-300 flex fixed top-0 w-full md:w-screen justify-between items-center p-3 px-8 md:px-32 z-20 ">
+<nav class="bg-TaupeBrown flex fixed top-0 w-full md:w-screen justify-between items-center p-3 px-8 md:px-14 z-20 ">
     <!-- Logo Section -->
     <div>
         <a href="/">
@@ -21,7 +21,7 @@
     <!-- Navigation Links -->
     <div class="ml-auto flex gap-10 md:pr-8 md:flex relative">
         <div class="flex gap-1 relative group">
-            <button id="shop" class="font-bold flex items-center">
+            <button id="shop" class="font-semibold text-white hover:text-BrandyPunch duration-300 flex items-center">
                 SHOP
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ml-1">
                     <path d="m6 9 6 6 6-6"/>
@@ -29,27 +29,58 @@
             </button>
             
             <!-- Dropdown Menu -->
-            <div class="hidden group-hover:flex absolute bg-blue-300 p-4 rounded-md top-full mt-2 shadow-lg w-64 z-50">
-                <div class="w-1/2">
-                    <p>afsgdhfgjhj,k</p>
+            <div class="hidden group-hover:flex gap-2 md:flex-col absolute p-4 rounded-md top-full shadow-lg w-20 z-50 bg-BrandyPunch">
+                <div class="w-full rounded-md px-2 py-1 bg-BrandyPunch  flex items-center justify-center">
+                    <p class="whitespace-nowrap text-center text-white">Coffee 1</p>
                 </div>
-                <div class="w-1/2">
-                    <p>wdasfedgrfthygjh</p>
+                <div class="w-full rounded-md px-2 py-1 bg-BrandyPunch flex items-center justify-center">
+                    <p class="whitespace-nowrap text-center text-white">Coffee 2</p>
                 </div>
             </div>
         </div>
 
+        <div class="flex justify-between gap-28">
         <ul class="md:flex gap-5 hidden ">
-            <li class="nav-link text-lg font-semibold">
-                <a href="#" class="hover:text-blue-500 duration-300">Instant Coffee</a>
+            <li class="relative group">
+                <a href="#" class="text-lg font-semibold text-white hover:text-BrandyPunch duration-300">
+                    About Us
+                </a>
             </li>
-            <li class="nav-link text-lg font-semibold">
-                <a href="#" class="hover:text-blue-500 duration-300">Bestsellers</a>
+            <li class="nav-link">
+                <a href="#" class="text-lg font-semibold text-white hover:text-BrandyPunch duration-300">Instant Coffee</a>
             </li>
-            <li class="nav-link text-lg font-semibold">
-                <a href="#" class="hover:text-blue-500 duration-300">Bulk Orders</a>
+            <li class="nav-link ">
+                <a href="#" class=" text-lg font-semibold text-white hover:text-BrandyPunch  duration-300">Bestsellers</a>
+            </li>
+            <!-- <li class="nav-link text-lg font-semibold">
+                <a href="#" class="text-white hover:text-BrandyPunch duration-300">Bulk Orders</a>
+            </li> -->
+            <li class="relative group">
+                <a href="#" class="text-lg font-semibold text-white hover:text-BrandyPunch duration-300">
+                    Contact Us
+                </a>
             </li>
         </ul>
+        <div class="flex justify-items-end gap-7">
+        <!-- <a class="" aria-label="Cart"> -->
+            <svg xmlns="http://www.w3.org/2000/svg"
+               class="fill-white hover:fill-BrandyPunch duration-300"
+              width="24" height="24"
+              viewBox="0 0 576 512">
+              <path d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/>
+            </svg>
+        <!-- </a> -->
+        <svg xmlns="http://www.w3.org/2000/svg"
+         width="24" height="24" viewBox="0 0 24 24"
+          fill="none" stroke="currentColor" stroke-width="2" 
+          stroke-linecap="round" stroke-linejoin="round" 
+          class="lucide lucide-search stroke-white hover:stroke-BrandyPunch duration-200">
+          <circle cx="11" cy="11" r="8"/>
+          <path d="m21 21-4.3-4.3"/>
+        </svg>
+       </div>
+    </div>
+
     </div>
 
     <!-- Mobile Navigation (hidden on desktop) -->
