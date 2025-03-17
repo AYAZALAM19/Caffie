@@ -1,0 +1,17 @@
+---
+const { title, description, src } = Astro.props;
+---
+
+<div class="relative mt-16">
+    <!-- Background Image -->
+    <img class="object-cover w-screen h-[600px] object-top" src={src} alt="">
+
+    <!-- Gradient Overlay -->
+    <!-- <div class="absolute inset-0 bg-gradient-to-r from-TaupeBrown via-[#78635d] to-transparent opacity-100"></div> -->
+     <div class="absolute inset-y-1/2 text-white flex-col justify-center items-center md:px-14">
+        <div class=" ">
+        <h1 class="md:text-8xl text-4xl whitespace-nowrap font-semibold ">{title}</h1>
+        <p class="md:text-2xl text-xl  whitespace-break-spaces ">{description}</p>
+        </div>
+     </div>
+</div>

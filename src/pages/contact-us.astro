@@ -1,36 +1,119 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import HeaderBanner from "../components/HeaderBanner.astro";
 ---
-<Layout>
-    <div class="w-screen bg-BrandyPunch">
-    <h1 class="text-center mt-16">Contact Page</h1>
-    <h2 class=" text-center"> Under Maintanense</h2>
-    <div class="flex justify-center ">
-        <img src="https://img.freepik.com/free-vector/software-code-testing-concept-illustration_114360-8414.jpg?t=st=1741523164~exp=1741526764~hmac=3a37b32729a0dbc8d7e1db3dfb4aa9c37687880999cf1d0cfd3dbd45fae323ac&w=740" 
-        alt="Software Code Testing Illustration"
-        class="w-[450px] h-[450px] rounded object-cover py-10">
-   
-    </div>
-    </div>
-    <div>
-       <form action="" method="post">
-        <div>
-            
-        </div>
-       </form>
-    </div>
 
-    <div class="flex justify-center my-10">
-        <div class="w-full max-w-4xl h-0 pb-[56.25%] relative px-4  "> 
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.129311926005!2d72.83656210000001!3d19.1458161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b709597cfd03%3A0x608cc435cbfb8cd1!2sSnow%20Waffle!5e0!3m2!1sen!2sin!4v1742001031161!5m2!1sen!2sin" 
-                class="absolute top-0 left-0 w-full md:w-[60rem] md:h-[30rem] h-full border-0"
-                allowfullscreen 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </div>
+<Layout>
+  <HeaderBanner
+    title=" The Art of Coffee"
+    description=" At Caffia, we believe coffee is more than a drink it’s a daily ritual of excellence."
+    src="/assets/images/contact/coffee_banner.jpg"
+  />
+
+  <div class="w-screen bg-BrandyPunch py-10 px-4 md:px-24">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Card 1 -->
+      <div class="bg-white rounded-2xl shadow-2xl">
+        <a
+          class="flex items-center space-x-4 p-6"
+          href="https://www.google.com/maps?q=Snow+Waffle+Shop+Mumbai"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><svg
+            class="w-32 h-32 text-gray-800 animate-bounce duration-200 dark:text-white"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              class="fill-[#FF0000]"
+              d="M5 9a7 7 0 1 1 8 6.93V21a1 1 0 1 1-2 0v-5.07A7.001 7.001 0 0 1 5 9Zm5.94-1.06A1.5 1.5 0 0 1 12 7.5a1 1 0 1 0 0-2A3.5 3.5 0 0 0 8.5 9a1 1 0 0 0 2 0c0-.398.158-.78.44-1.06Z"
+              clip-rule="evenodd"></path>
+          </svg>
+
+          <p class="font-medium text-lg">
+            Snow Waffle,Shop No:12 SRA CHS, Santosh Nagar, Kaju Pada, opp. Shiv
+            Sai Mandir, Behram Baug, Jogeshwari West, Mumbai, Maharashtra 400102
+          </p>
+        </a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-2xl shadow-2xl">
+        <a
+          class="flex justify-center items-center translate-y-[6%] md:translate-y-[40%] cursor-pointer space-x-4 p-6"
+          href=""
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-14 fill-[#0000ff] animate-tada h-14"
+            viewBox="0 0 512 512"
+            ><path
+              d="M280 0C408.1 0 512 103.9 512 232c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-101.6-82.4-184-184-184c-13.3 0-24-10.7-24-24s10.7-24 24-24zm8 192a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm-32-72c0-13.3 10.7-24 24-24c75.1 0 136 60.9 136 136c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-48.6-39.4-88-88-88c-13.3 0-24-10.7-24-24zM117.5 1.4c19.4-5.3 39.7 4.6 47.4 23.2l40 96c6.8 16.3 2.1 35.2-11.6 46.3L144 207.3c33.3 70.4 90.3 127.4 160.7 160.7L345 318.7c11.2-13.7 30-18.4 46.3-11.6l96 40c18.6 7.7 28.5 28 23.2 47.4l-24 88C481.8 499.9 466 512 448 512C200.6 512 0 311.4 0 64C0 46 12.1 30.2 29.5 25.4l88-24z"
+            ></path></svg
+          >
+          <p class="font-medium text-lg whitespace-nowrap md:text-xl">
+            Contact Us: +91 1234567890
+          </p>
+        </a>
+      </div>
+
+      <!-- Card 3 -->
+      <div
+        class="flex justify-center items-center space-x-4 bg-white p-6 rounded-2xl shadow-2xl"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="fill-BrandyPunch w-16 h-16"
+          viewBox="0 0 384 512"
+          ><path
+            d="M48 0C21.5 0 0 21.5 0 48L0 464c0 26.5 21.5 48 48 48l96 0 0-80c0-26.5 21.5-48 48-48s48 21.5 48 48l0 80 96 0c26.5 0 48-21.5 48-48l0-416c0-26.5-21.5-48-48-48L48 0zM64 240c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32zm112-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32c0-8.8 7.2-16 16-16zm80 16c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32zM80 96l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32c0-8.8 7.2-16 16-16zm80 16c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32zM272 96l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32c0-8.8 7.2-16 16-16z"
+          ></path></svg
+        >
+        <p class="font-medium text-lg">
+          Business Hours: Mon-Sat: 8 AM - 8 PM | Sun: Closed
+        </p>
+      </div>
+
+      <!-- Card 4 -->
+      <div
+        class=" bg-white rounded-2xl shadow-2xl"
+      >
+        <a href="mailto:info@gmail.com" class="flex items-center justify-center p-6 space-x-4"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-mail fill-BrandyPunch md:w-20 h-14 w-14 md:h-20 stroke-white hover:stroke-BrandyPunch hover:fill-white duration-300 transition-all"
+            ><rect width="20" height="16" x="2" y="4" rx="2"></rect><path
+              d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg
+          >
+          <p class="font-medium text-lg md:text-xl">Email Us</p>
+        </a>
+      </div>
     </div>
-    
-    
+  </div>
+
+  <form action="" method="post">
+    <div></div>
+  </form>
+  
+  <div class="flex justify-center">
+      <div class="w-full max-w-4xl h-0 my-10 pb-[30.25%] relative px-4">
+          <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.129311926005!2d72.83656210000001!3d19.1458161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b709597cfd03%3A0x608cc435cbfb8cd1!2sSnow%20Waffle!5e0!3m2!1sen!2sin!4v1742001031161!5m2!1sen!2sin"
+          class="absolute top-0 left-0 w-full md:w-[60rem] md:h-[30rem] h-full border-0"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          >
+        </iframe>
+    </div>
+</div>
 </Layout>
