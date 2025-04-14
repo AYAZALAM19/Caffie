@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro"
+import CoffeeCard from "../components/CoffeeCard.astro"
 
 ---
 
@@ -41,154 +42,40 @@ import Layout from "../layouts/Layout.astro"
 	  </div>
 
 	  <!-- Advertisement Banner -->
-<div class="w-screen mx-auto flex justify-center overflow-auto md:overflow-hidden items-center gap-8 py-7 pl-48 md:px-4">
-	<div class="flex justify-center items-center">
-		<div>
-			<p class="md:text-xl text-base whitespace-nowrap font-bold">As seen on</p>
+	   <div class=" container mx-auto">
+		<h1 class="lg:!text-4xl md:!text-2xl text-xl mt-10 lg:px-32 md:px-28 px-16 font-bold text-TaupeBrown text-center ">Caffie Where Coffee Meets Comfort</h1>
+		<p class=" italic tracking-wide font-semibold lg:text-xl md:text-lg text-base text-gray lg:px-40 md:px-28 px-16 py-10 text-center">
+				"At Caffie, every sip tells a story. Whether you're rushing into
+				 a busy morning or slowing down for an afternoon breather, we’re 
+				 here to make each moment special. Our brews aren’t just drinks — 
+				 they’re comfort in a cup, carefully crafted with ethically sourced 
+				 beans and served with heart. Step inside, breathe in the aroma, and 
+				 discover your new favorite ritual.”
+		</p>
+	   </div>
+	   <CoffeeCard />
+
+	   <div class="container mx-auto">
+		<div class="mt-12 lg:px-28 md:px-16 px-4 py-10">
+			<h2 class="text-center lg:!text-3xl md:1text-xl !text-lg  font-bold text-TaupeBrown my-8">“More Than Just Coffee”</h2>
+			<p class="font-medium tracking-wide text-center pb-5 text-gray lg:text-xl md:text-lg text-base">
+				Caffie was born from a simple idea — that a coffee shop can be more than just a stop in your day. We envisioned a space that blends warmth, community, and comfort with the finest brews around. From the very beginning, we’ve made it our mission to serve more than just coffee; we serve connection.
+			</p>	
+			<p class="font-medium tracking-wide text-center text-gray lg:text-xl md:text-lg text-base mb-5">
+				Our beans are ethically sourced from trusted growers who share our values, and our flavors are inspired by the culture and creativity of the people we serve. Whether it’s your first visit or your hundredth, we want you to feel like you’re part of something familiar — something special.
+				Come sip, stay a while, and discover how every corner of Caffie is brewed with heart.
+			</p>
+			<a href="/about-us" class=" bg-BrandyPunch  py-2 px-4 rounded-xl text-TaupeBrown hover:text-white duration-500 font-semibold lg:text-xl md:text-lg text-base "> Read Our Story</a>
 		</div>
-	</div>
-	  <div class="flex  justify-center items-center">
-		<div>
-		<p class="md:text-xl text-base whitespace-nowrap font-bold">Forbes</p>
-		</div>
-	  </div>
-	
-	<div class="flex justify-center items-center">
-	  <div>
-		<p class="md:text-xl text-base whitespace-nowrap font-bold">The Times Of India</p>
-	  </div>
-	</div>
-	<div class="flex justify-center items-center">
-	  <div>
-		<p class="md:text-xl text-base whitespace-nowrap font-bold">BloomBerg</p>
-	  </div>
-	</div>
-	<div class="flex justify-center items-center">
-	  <div>
-		<p class="md:text-xl text-base whitespace-nowrap font-bold">GQ</p>
-	  </div>
-	</div>
-  </div>
+	   </div>
 
 
-  <!-- caffie is a homegrown Indian coffee brand. -->
-  <div class="w-screen bg-blue-300 py-28">
-    <div class="flex flex-col items-center">
-        <!-- Icon -->
-        <div class="flex justify-center items-center  py-10">
-            <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path d="M29.2066 14.3564L30.6855 12.8775C31.3134 12.247 31.6658 11.3934 31.6658 10.5036C31.6658 9.61371 31.3134 8.76008 30.6855 8.12957C30.2735 7.72559 29.7593 7.44156 29.198 7.30799L29.3882 7.11773C30.0188 6.48686 30.373 5.6314 30.373 4.73943C30.373 3.84746 30.0188 2.992 29.3882 2.36113C28.7462 1.7554 27.8968 1.41799 27.0141 1.41799C26.1315 1.41799 25.2823 1.7554 24.6403 2.36113L24.4671 2.53408C24.3134 1.97889 24.0149 1.47452 23.6023 1.07254C22.9603 0.466806 22.1111 0.129395 21.2284 0.129395C20.3458 0.129395 19.4964 0.466806 18.8544 1.07254L7.0581 12.9294V7.07447C7.08122 6.6189 7.01149 6.16341 6.85308 5.73565C6.69467 5.30788 6.45094 4.91679 6.13668 4.58617C5.82241 4.25555 5.4442 3.9923 5.02502 3.81241C4.60583 3.63252 4.15436 3.53975 3.6982 3.53975C3.24205 3.53975 2.79057 3.63252 2.37139 3.81241C1.95221 3.9923 1.574 4.25555 1.25973 4.58617C0.945464 4.91679 0.701741 5.30788 0.543329 5.73565C0.384916 6.16341 0.31519 6.6189 0.33831 7.07447V20.194C0.38148 23.1067 1.53897 25.8921 3.57279 27.9775C6.35071 30.6736 10.0799 32.1652 13.9508 32.1287C15.3973 32.1292 16.8296 31.8436 18.1654 31.2885C19.5012 30.7334 20.7141 29.9198 21.7343 28.8943L30.6595 19.9692C30.9725 19.6581 31.2207 19.2882 31.3902 18.8808C31.5597 18.4734 31.6472 18.0365 31.6472 17.5952C31.6472 17.1539 31.5597 16.717 31.3902 16.3096C31.2207 15.9022 30.9725 15.5323 30.6595 15.2212C30.2612 14.8082 29.7595 14.5096 29.2066 14.3564ZM29.4486 18.7238L20.5236 27.6489C19.6604 28.5145 18.6345 29.2008 17.505 29.6683C16.3754 30.1358 15.1646 30.3754 13.9422 30.3731C10.5202 30.4185 7.21913 29.1098 4.75771 26.7322C3.04446 24.9655 2.06996 22.6115 2.03335 20.1508V7.07447C2.01702 6.8504 2.04708 6.62538 2.12161 6.41344C2.19614 6.2015 2.31364 6.0072 2.46662 5.84267C2.61959 5.67814 2.80476 5.54691 3.01073 5.45718C3.21669 5.36744 3.43891 5.32112 3.66358 5.32112C3.88824 5.32112 4.11046 5.36744 4.31643 5.45718C4.52239 5.54691 4.70777 5.67814 4.86075 5.84267C5.01372 6.0072 5.13102 6.2015 5.20554 6.41344C5.28007 6.62538 5.31013 6.8504 5.2938 7.07447V15.005C5.29596 15.1207 5.31948 15.2351 5.36305 15.3423C5.45106 15.5526 5.61849 15.7197 5.82904 15.8071C6.03959 15.8946 6.27626 15.8954 6.48738 15.8093C6.59249 15.7623 6.68881 15.698 6.77263 15.619L20.0999 2.29193C20.4096 1.99234 20.8235 1.82486 21.2544 1.82486C21.6853 1.82486 22.0992 1.99234 22.4089 2.29193C22.7121 2.598 22.8821 3.01139 22.8821 3.44218C22.8821 3.87296 22.7121 4.28632 22.4089 4.5924L13.2502 13.751C13.0892 13.913 12.9988 14.1322 12.9988 14.3607C12.9988 14.5892 13.0892 14.8084 13.2502 14.9704C13.4123 15.1315 13.6315 15.2219 13.86 15.2219C14.0885 15.2219 14.3078 15.1315 14.4698 14.9704L23.6283 5.81182L25.8683 3.58055C26.1785 3.2855 26.5904 3.12095 27.0186 3.12095C27.4467 3.12095 27.8584 3.2855 28.1686 3.58055C28.3198 3.73155 28.4399 3.91086 28.5217 4.10822C28.6035 4.30559 28.6454 4.51713 28.6454 4.73077C28.6454 4.94442 28.6035 5.15598 28.5217 5.35335C28.4399 5.55071 28.3198 5.73002 28.1686 5.88102L16.7702 17.2795C16.6512 17.4009 16.5706 17.5547 16.5386 17.7217C16.5065 17.8886 16.5243 18.0613 16.5899 18.2182C16.6554 18.3751 16.7657 18.5092 16.907 18.6037C17.0483 18.6982 17.2142 18.749 17.3842 18.7497C17.498 18.7504 17.6109 18.7286 17.7163 18.6856C17.8217 18.6425 17.9174 18.5791 17.9982 18.499L27.1569 9.34036C27.4671 9.0453 27.879 8.88076 28.3072 8.88076C28.7353 8.88076 29.147 9.0453 29.4572 9.34036C29.6097 9.49151 29.7309 9.67134 29.8134 9.8695C29.896 10.0677 29.9384 10.2802 29.9384 10.4949C29.9384 10.7096 29.896 10.9221 29.8134 11.1203C29.7309 11.3185 29.6097 11.4983 29.4572 11.6495L25.9202 15.1866L20.2988 20.8081C20.1377 20.9701 20.0473 21.1893 20.0473 21.4178C20.0473 21.6463 20.1377 21.8654 20.2988 22.0275C20.3792 22.1085 20.4748 22.1729 20.5802 22.2168C20.6856 22.2607 20.7986 22.2833 20.9128 22.2833C21.0269 22.2833 21.1399 22.2607 21.2453 22.2168C21.3507 22.1729 21.4464 22.1085 21.5268 22.0275L27.1395 16.406C27.4503 16.1228 27.8581 15.9703 28.2784 15.98C28.6987 15.9897 29.0992 16.161 29.3964 16.4583C29.6937 16.7556 29.8649 17.156 29.8747 17.5763C29.8844 17.9966 29.7318 18.4045 29.4486 18.7152V18.7238Z" fill="#33578D"></path>
-			</svg>
-        </div>
-
-        <!-- Text Section -->
-        <div>
-            <p class="text-center text-2xl text-blue-800 px-4 md:px-96">
-                Sleepy Owl is a homegrown Indian coffee brand. We 
-                spend inordinately long making coffee that is as 
-                good as it can be in every single cup.
-            </p>
-        </div>
-    </div>
-</div>
-
-<div class="bg-blue-300 w-screen mx-auto px-2 md:px-10">
-	<div class="flex flex-col md:flex-row gap-10  md:px-10">
-	  <!-- First Image -->
-	  <div class="w-full md:w-1/2">
-		<img src="//sleepyowl.co/cdn/shop/files/Our_Products_in_home_page_desktop_view.jpg?v=1722671621" alt="" class="w-full h-auto">
-	  </div>
   
-	  <!-- Second Image -->
-	  <div class="w-full md:w-1/2">
-		<img src="//sleepyowl.co/cdn/shop/files/Merch_web_Homepage_banner.jpg?v=1704699064" alt="" class="w-full h-auto">
-	  </div>
-	</div>
-  </div>
-
-<!-- coffee beans and coffee -->
- <!-- Ice Coffee and Filter -->
- <div class="bg-blue-300 w-screen mx-auto px-4 md:px-20">
-	<div class="grid grid-cols-1 md:grid-cols-3 gap-8 justify-center items-center md:py-8">
-	  <!-- Card 1 -->
-	  <div class="relative">
-		<img class="w-full h-auto" src="//sleepyowl.co/cdn/shop/files/img1.png?v=1630523731" alt="Hot Brew">
-		<a class="absolute inset-x-0 bottom-3/4 text-xl md:text-3xl text-amber-800 font-semibold px-8 " href="">
-		  <p>Hot Brew—Ready in</p>
-		  <p class="flex">5 Minutes
-		   <svg class="ml-2  mt-2" width="26" height="26" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-			<path d="M4.62793 11.239L11.239 4.62793" stroke="#441c06" stroke-width="1.76296" stroke-linecap="round" stroke-linejoin="round"></path>
-			<path d="M6.6748 4.62793L11.2382 4.62808V8.89179" stroke="#441c06" stroke-width="1.76296" stroke-linecap="round" stroke-linejoin="round"></path>
-		  </svg>
-		  </p>
-		  </a>
-		  
-		</a>
-	  </div>
-	  
-	  <!-- Card 2 -->
-	  <div class="relative">
-		<img class="w-full h-auto" src="//sleepyowl.co/cdn/shop/files/img1.png?v=1630523731" alt="Hot Brew">
-		<a class="absolute inset-x-0 bottom-3/4 text-xl md:text-3xl text-blue-900 font-semibold px-8" href="">
-		   <p>Cold Brew At</p> 
-		  <p class="flex">Home 
-			<svg class="ml-2  mt-2 stroke-blue-900" width="26" height="26" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path d="M4.62793 11.239L11.239 4.62793"  stroke-width="1.76296" stroke-linecap="round" stroke-linejoin="round"></path>
-				<path d="M6.6748 4.62793L11.2382 4.62808V8.89179"  stroke-width="1.76296" stroke-linecap="round" stroke-linejoin="round"></path>
-			  </svg>
-		  </p>
-		</a>
-	  </div>
-	  <!-- Card 3 -->
-	  <div class="relative">
-		<img class="w-full h-auto" src="//sleepyowl.co/cdn/shop/files/img1.png?v=1630523731" alt="Hot Brew">
-		<a class="absolute inset-x-0 top-4 text-xl md:text-3xl text-blue-950 font-semibold px-4 text-center">
-		   <p>Signature Arabica</p>
-		   <p>Coffee Beans 
-			<svg class="ml-2  mt-2 stroke-blue-900" width="26" height="26" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path d="M4.62793 11.239L11.239 4.62793"  stroke-width="1.76296" stroke-linecap="round" stroke-linejoin="round"></path>
-				<path d="M6.6748 4.62793L11.2382 4.62808V8.89179"  stroke-width="1.76296" stroke-linecap="round" stroke-linejoin="round"></path>
-			  </svg>
-		   </p>
-		</a>
-	  </div>
-	</div>
-  </div>
-  
-  
-
-<!-- Ice Coffee and Filter -->
-<div class="bg-blue-300 w-screen mx-auto px-4 sm:px-10 md:px-20">
-	<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 py-8">
-	  <!-- Card 1 -->
-	  <div class="relative w-full mx-auto">
-		<img class="w-full h-auto" src="//sleepyowl.co/cdn/shop/files/img1.png?v=1630523731" alt="Hot Brew">
-		<p class="absolute inset-x-0 top-4 text-xl md:text-3xl text-amber-800 font-semibold px-4 text-center">
-		  Hot Brew—Ready in 5 Minutes
-		</p>
-	  </div>
-	  <!-- Card 2 -->
-	  <div class="relative w-full mx-auto">
-		<img class="w-full h-auto" src="//sleepyowl.co/cdn/shop/files/img1.png?v=1630523731" alt="Hot Brew">
-		<p class="absolute inset-x-0 top-4 text-xl md:text-3xl text-blue-900 font-semibold px-4 text-center">
-		  Cold Brew At Home
-		</p>
-	  </div>
-	  <!-- Card 3 -->
-	  <div class="relative w-full mx-auto">
-		<img class="w-full h-auto" src="//sleepyowl.co/cdn/shop/files/img1.png?v=1630523731" alt="Hot Brew">
-		<p class="absolute inset-x-0 top-4 text-xl md:text-3xl text-blue-950 font-semibold px-4 text-center">
-		  Signature Arabica Coffee Beans
-		</p>
-	  </div>
-	</div>
-  </div>
-  
-  <div class="bg-blue-300 w-screen">
-	<div class="md:px-20 px-2 md:my-20 mx-auto">
-		<h2 class="text-center md:text-5xl font-semibold text-blue-600">Bestsellers</h2>
+  <div class="bg-BrandyPunch py-12 w-screen">
+	<div class="lg:px-28 md:px-16 px-2 mx-auto">
+		<h2 class="text-center md:text-5xl font-semibold">Crafted Drinks You’ll Love</h2>
 <!-- Tab buttons -->
-<div class="flex flex-wrap justify-center md:justify-between py-5 border-b-4 border-blue-600 px-4 md:px-24 gap-2">
+<div class="flex flex-wrap justify-center md:justify-between py-7 border-b-4 border-blue-600 px-4 md:px-24 gap-2">
     <button class="tablinks text-base whitespace-nowrap font-semibold md:text-xl rounded-md px-4 py-2" onclick="openCoffee('instantCoffee', this)" id="defaultOpen">Instant Coffee</button>
     <button class="tablinks text-base whitespace-nowrap font-semibold md:text-xl rounded-md px-4 py-2" onclick="openCoffee('coldBrew', this)">Cold Brew</button>
     <button class="tablinks text-base whitespace-nowrap font-semibold md:text-xl rounded-md px-4 py-2" onclick="openCoffee('hotBrew', this)">Hot Brew</button>
@@ -197,6 +84,7 @@ import Layout from "../layouts/Layout.astro"
 
 
 		<!-- Tab Content -->
+		 <!-- have to give See more button -->
 		<div class="flex justify-between my-12 ">
 			<div id="instantCoffee" class="tabcontent block ">
 				<div class="grid w-full grid-cols-1 md:grid-cols-3 gap-4">
@@ -475,6 +363,33 @@ import Layout from "../layouts/Layout.astro"
 		</div>
 	</div>
 </div>
+
+<div class="container my-10 mx-auto">
+	<h2 class="lg:!text-3xl md:!text-xl !text-lg text-center py-5 ">Why Choose Us?</h2>
+	<div>
+		<h3 class=" text-gray font-bold lg:!text-2xl md:!text-xl !text-lg py-2 lg:px-28 md:px-16 px-4 ">Ethically Sourced Beans</h3>
+		<p class="lg:text-xl md:text-lg text-base text-gray py-3 lg:px-28 md:px-16 px-4 ">
+			We believe great coffee starts at the source. That’s why we partner only with farmers and cooperatives that practice sustainable, ethical farming. Every bean we use is carefully selected not just for flavor, but for the integrity behind it — supporting fair wages, environmental care, and strong local communities.
+
+
+		</p>
+		<h3 class=" text-gray font-bold lg:!text-2xl md:!text-xl !text-lg py-2 lg:px-28 md:px-16 px-4 "> Freshly Brewed Always</h3>
+		<p class="lg:text-xl md:text-lg text-base text-gray py-3 lg:px-28 md:px-16 px-4 ">
+			At Caffie, freshness is never optional — it’s our promise. From the moment you place your order, we start crafting your drink from scratch using freshly ground beans and high-quality ingredients. Every cup is brewed just for you, served at its flavorful peak.
+		</p>
+		<h3 class=" text-gray font-bold lg:!text-2xl md:!text-xl !text-lg py-2 lg:px-28 md:px-16 px-4">Locally Inspired Flavors</h3>
+		<p class="lg:text-xl md:text-lg text-base text-gray py-3 lg:px-28 md:px-16 px-4 ">
+			We celebrate our roots and the richness of global coffee traditions. Our menu brings together classic favorites and seasonal specials inspired by local tastes and cultural flair — giving you a unique experience in every cup, and something new to explore with each visit
+		</p>
+		<h3 class=" text-gray font-bold lg:!text-2xl md:!text-xl !text-lg py-2 lg:px-28 md:px-16 px-4 ">Welcoming Vibe</h3>
+		<p class="lg:text-xl md:text-lg text-base text-gray py-3 lg:px-28 md:px-16 px-4 ">
+			More than just a café, Caffie is your cozy corner of calm. Whether you're diving into work, unwinding with a book, or catching up with friends, our warm interiors and friendly faces create a space where you can just be. Here, every visit feels like coming home.
+		</p>
+	</div>
+</div>
+
+
+</Layout>
   
 
   

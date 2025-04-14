@@ -21,7 +21,7 @@ export default {
       TaupeBrown: '#6E4C41', //header footer and more 
       white : '#ffff',
       BrandyPunch : '#D4902A', //use on hover
-      gray : '#A9A9A9' 
+      gray : '#363636' 
     }
   },
   plugins: [],
