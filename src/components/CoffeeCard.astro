@@ -1,40 +1,49 @@
 ---
-import { fetchProgram } from "./api.js"
-
+import { fetchProgram } from "./api.js";
 
 type Program = {
   id: number,
   title: string,
-  price: number,
+  amount: number,
   description: string,
-  image: string,
+  imageUrl: string,
   ingredients: string[],
   totalSales: number
 }
 
 const coffeePrograms: Program[] = await fetchProgram();
+console.log('coffeePrograms:', coffeePrograms); // Debug
 ---
-<div class=" lg:mx-24 md:mx-8 mx-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+<div class="lg:mx-24 md:mx-8 mx-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6 bg-cream-100">
   {coffeePrograms?.length > 0 ? (
     coffeePrograms.map((item) => (
-      <div key={item.id} class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col">
-        <img 
-          src={item.image} 
-          alt={item.title} 
-          class="w-full h-60 object-cover"
-          loading="lazy"
-        />
-
-        <div class="p-4 flex flex-col justify-between flex-grow">
-          <h2 class="text-xl font-semibold mb-2 text-brown-900">{item.title}</h2>
-          <p class="text-gray-600 text-sm mb-2 line-clamp-3">{item.description}</p>
-
-          <div class="mt-auto flex items-center justify-between">
-            <span class="text-lg font-bold text-brown-700">
-              ${(item.price ?? 0).toFixed(2)}
+      <div 
+        key={item.id} 
+        class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col transform hover:scale-105"
+      >
+        <div class="relative">
+          <img 
+            src={item.imageUrl} 
+            alt={item.title} 
+            class="w-full h-64 object-cover transition-transform duration-300 hover:scale-110"
+            loading="lazy"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-TaupeBrown/40 to-transparent"></div>
+          <span class="absolute top-4 left-4 bg-BrandyPunch text-white text-sm font-medium px-3 py-1 rounded-full">
+            New
+          </span>
+        </div>
+        <div class="p-6 flex flex-col justify-between flex-grow">
+          <div>
+            <h2 class="text-2xl font-bold text-TaupeBrown mb-2">{item.title}</h2>
+            <p class="text-gray-600 text-base mb-4 line-clamp-2">{item.description}</p>
+          </div>
+          <div class="mt-auto flex items-center justify-between w-full min-w-0">
+            <span class="text-xl font-semibold text-TaupeBrown-800">
+              ${(item.amount ?? 0).toFixed(2)}
             </span>
             <button 
-              class="bg-brown-600 hover:bg-brown-700 text-white px-4 py-2 rounded-lg transition"
+              class="bg-TaupeBrown hover:bg-BrandyPunch text-white px-5 py-2.5 rounded-lg font-medium transition-transform duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-BrandyPunch focus:ring-opacity-50 flex-shrink-0"
               aria-label={`Buy ${item.title}`}
             >
               Buy Now
@@ -44,6 +53,6 @@ const coffeePrograms: Program[] = await fetchProgram();
       </div>
     ))
   ) : (
-    <p class="col-span-full text-center text-gray-500">No coffee programs available</p>
+    <p class="col-span-full text-center text-gray-600 text-lg py-12">No coffee items are available</p>
   )}
 </div>

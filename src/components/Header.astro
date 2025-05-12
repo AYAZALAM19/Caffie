@@ -19,26 +19,12 @@
         <!-- Navigation Links -->
         <div class="hidden md:flex items-center gap-10 md:pr-8">
             <!-- Shop Dropdown -->
-            <div class="relative">
-                <button id="shopButton" class="font-semibold text-white hover:text-BrandyPunch duration-300 flex items-center">
-                    SHOP
-                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ml-1">
-                        <path d="m6 9 6 6 6-6"/>
-                    </svg>
-                </button>
-
-                <!-- Dropdown Menu -->
-                <div id="shopDropdown" class="hidden absolute p-4 rounded-md top-full shadow-lg w-28 bg-BrandyPunch z-50">
-                    <a href="#" class="block px-2 py-1 text-white text-center hover:bg-BrandyPunch/80 rounded-md">Coffee 1</a>
-                    <a href="#" class="block px-2 py-1 text-white text-center hover:bg-BrandyPunch/80 rounded-md">Coffee 2</a>
-                </div>
-            </div>
-
             <!-- Other Links -->
             <ul class="flex gap-5">
+                 <li><a href="/" class="text-lg font-semibold text-white hover:text-BrandyPunch duration-300">Home</a></li>
                 <li><a href="/about-us/" class="text-lg font-semibold text-white hover:text-BrandyPunch duration-300">About Us</a></li>
-                <li><a href="#" class="text-lg font-semibold text-white hover:text-BrandyPunch duration-300">Instant Coffee</a></li>
-                <li><a href="#" class="text-lg font-semibold text-white hover:text-BrandyPunch duration-300">Bestsellers</a></li>
+                <li><a href="/menus" class="text-lg font-semibold text-white hover:text-BrandyPunch duration-300">Our Menu</a></li>
+                <li><a href="/blog" class="text-lg font-semibold text-white hover:text-BrandyPunch duration-300">Blogs</a></li>
                 <li><a href="/contact-us/" class="text-lg font-semibold text-white hover:text-BrandyPunch duration-300">Contact Us</a></li>
             </ul>
         </div>
@@ -61,31 +47,56 @@
     </nav>
 
     <!-- Mobile Navigation (Hidden by default) -->
-    <!-- <div id="mobileMenu" class="absolute top-0 left-0 bg-TaupeBrown w-full h-screen flex flex-col items-center justify-center space-y-6 md:hidden">
-        <ul class="text-lg">
-            <li><a href="#" class="block text-white hover:text-BrandyPunch duration-300">Instant Coffee</a></li>
-            <li><a href="#" class="block text-white hover:text-BrandyPunch duration-300">Bestsellers</a></li>
-            <li><a href="#" class="block text-white hover:text-BrandyPunch duration-300">Bulk Orders</a></li>
-        </ul>
-    </div> -->
+<div id="mobileMenu" class="absolute bg-TaupeBrown w-60 h-screen transform -translate-x-full transition-transform duration-300 ease-in-out hidden md:hidden">
+    <ul class="text-lg my-6 px-2">
+        <li class="py-1">
+            <a href="/about-us" class="block font-semibold text-BrandyPunch">About</a>
+        </li>
+        <li>
+            <a href="/contact-us" class="block font-semibold text-BrandyPunch">Contact</a>
+        </li>
+        <!-- <li>
+            <a href="#" class="block font-semibold text-BrandyPunch">Bulk Orders</a>
+        </li> -->
+    </ul>
+</div>
 </header>
+
 
 <!-- JavaScript for dropdown and mobile menu -->
 <script is:inline>
-    document.getElementById('hamburger').addEventListener('click', () => {
-        document.getElementById('mobileMenu').classList.toggle('hidden');
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', () => {
+        if (mobileMenu.classList.contains('hidden')) {
+            // Step 1: Remove hidden first (show it)
+            mobileMenu.classList.remove('hidden');
+            // Step 2: Then allow transform animation
+            setTimeout(() => {
+                mobileMenu.classList.remove('-translate-x-full');
+                mobileMenu.classList.add('translate-x-0');
+            }, 10); // slight delay to trigger CSS animation
+        } else {
+            // Step 3: Slide it back
+            mobileMenu.classList.remove('translate-x-0');
+            mobileMenu.classList.add('-translate-x-full');
+            // Step 4: After animation ends, hide it
+            setTimeout(() => {
+                mobileMenu.classList.add('hidden');
+            }, 300); // wait for transition (same as duration-300)
+        }
     });
 
-    document.getElementById('shopButton').addEventListener('click', (event) => {
+    const shopButton = document.getElementById('shopButton');
+    const shopDropdown = document.getElementById('shopDropdown');
+
+    shopButton.addEventListener('click', (event) => {
         event.preventDefault();
-        document.getElementById('shopDropdown').classList.toggle('hidden');
+        shopDropdown.classList.toggle('hidden');
     });
 
-    // Close dropdown if clicking outside
     document.addEventListener('click', (event) => {
-        const shopButton = document.getElementById('shopButton');
-        const shopDropdown = document.getElementById('shopDropdown');
-
         if (!shopButton.contains(event.target) && !shopDropdown.contains(event.target)) {
             shopDropdown.classList.add('hidden');
         }
