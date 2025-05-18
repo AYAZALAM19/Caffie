@@ -1,7 +1,7 @@
 ---
 import { fetchProgram } from "./api.js";
-
 type Program = {
+
   id: number,
   title: string,
   amount: number,
@@ -9,10 +9,11 @@ type Program = {
   imageUrl: string,
   ingredients: string[],
   totalSales: number
+
 }
 
 const coffeePrograms: Program[] = await fetchProgram();
-console.log('coffeePrograms:', coffeePrograms); // Debug
+// console.log('coffeePrograms:', coffeePrograms); // Debug
 ---
 <div class="lg:mx-24 md:mx-8 mx-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6 bg-cream-100">
   {coffeePrograms?.length > 0 ? (
